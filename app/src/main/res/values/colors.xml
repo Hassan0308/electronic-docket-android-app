@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorAccent">#E91E63</color>
+    <color name="colorAccentWithAlpha">#2007ABB3</color>
+    <color name="colorPrimary">#F06292</color>
+    <color name="colorPrimaryDark">#EC407A</color>
+
+    <color name="introText">#F0FFFFFF</color>
+    <color name="categoryText">#F0FFFFFF</color>
+    <color name="defaultText">#4A4A4C</color>
+    <color name="diaryCountText">#E91E63</color>
+
+    <color name="calendarBackground">#FFFFFF</color>
+
+    <!--Showcase Color-->
+    <color name="showCaseViewBackground">#D81B60</color>
+    <color name="showCaseButtonBackground">#4A4A4C</color>
+    <color name="colorBlack">#000</color>
+
+
+
+
+
+    <!--App Color-->
+    <!--<color name="colorAccent">#07ABB3</color>-->
+    <!--<color name="colorAccentWithAlpha">#2007ABB3</color>-->
+    <!--<color name="colorPrimary">#07ABB3</color>-->
+    <!--<color name="colorPrimaryDark">#089C90</color>-->
+
+    <!--<color name="introText">#F0FFFFFF</color>-->
+    <!--<color name="categoryText">#F0FFFFFF</color>-->
+    <!--<color name="defaultText">#4A4A4C</color>-->
+    <!--<color name="diaryCountText">#FF33B5E5</color>-->
+
+    <!--<color name="calendarBackground">#FFFFFF</color>-->
+
+    <!--&lt;!&ndash;Showcase Color&ndash;&gt;-->
+    <!--<color name="showCaseViewBackground">#e570A3B4</color>-->
+    <!--<color name="showCaseButtonBackground">#4A4A4C</color>-->
+</resources>
