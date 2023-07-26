@@ -1,0 +1,228 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'realm-android'
+
+ext.versions = [
+    compileSdk: 33
+]
+
+android {
+    compileSdkVersion versions.compileSdk
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    signingConfigs {
+        config {
+            storeFile file('C:/Users/92304/Desktop/keyst/applogix.jks')
+            storePassword 'alx123'
+            keyAlias 'applogix'
+            keyPassword 'alx123'
+        }
+    }
+
+
+
+    /**
+     * @versionName: major.minor.maintenance(versionCode).hotfix(date+sequence)
+     * @minSdkVersion: 19 (Android 4.4 KitKat)
+     */
+    defaultConfig {
+        applicationId "me.blog.korn123.easydiary"
+        minSdkVersion 19
+        targetSdkVersion versions.compileSdk
+        versionCode 300
+        versionName '1.4.300.202307110'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        renderscriptTargetApi 18
+        renderscriptSupportModeEnabled true
+        signingConfig signingConfigs.config
+//        ndk.debugSymbolLevel = 'FULL'
+    }
+//    ndkVersion "25.0.8221429"
+    flavorDimensions "buildType"
+    productFlavors {
+        gmsProd {
+            dimension "buildType"
+            signingConfig signingConfigs.config
+        }
+        gmsDev {
+            dimension "buildType"
+            signingConfig signingConfigs.config
+        }
+        foss {
+            dimension "buildType"
+            signingConfig signingConfigs.config
+        }
+    }
+    sourceSets {
+        gmsProd {
+            manifest.srcFile 'src/gms/AndroidManifest.xml'
+            java {
+                srcDirs 'src/main/java', 'src/gmsProd/java', 'src/gms/java'
+            }
+        }
+        gmsDev {
+            manifest.srcFile 'src/gms/AndroidManifest.xml'
+            java {
+                srcDirs 'src/main/java', 'src/gmsDev/java', 'src/gms/java'
+            }
+        }
+        foss {
+            manifest.srcFile 'src/foss/AndroidManifest.xml'
+            java {
+                srcDirs 'src/main/java', 'src/foss/java'
+            }
+        }
+    }
+    buildFeatures{
+        dataBinding true
+        viewBinding true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true // Use Android app bundle
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def releaseFileName = "easy_diary-$versionName-${new Date().format('yyyyMMddHHmmss')}.apk"
+                    println(output.outputFileName)
+                    println("releaseFileName: $releaseFileName")
+                    output.outputFileName = releaseFileName
+                }
+            }
+            signingConfig signingConfigs.config
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.config
+        }
+    }
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/commons_release.kotlin_module', 'META-INF/rxjava.properties', 'META-INF/DEPENDENCIES']
+        }
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'me.blog.korn123.easydiary'
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+configurations.all {
+    exclude group: 'org.jetbrains', module: 'annotations-java5'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // androidx
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.biometric:biometric:1.1.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'androidx.activity:activity-ktx:1.7.2'
+    implementation 'androidx.fragment:fragment-ktx:1.6.0'
+    implementation 'androidx.preference:preference-ktx:1.2.0'
+    implementation ('androidx.work:work-runtime-ktx:2.8.1') { exclude group: 'com.google.guava', module: 'listenablefuture' }
+    implementation "androidx.browser:browser:1.5.0"
+
+    // google components for develop package (not foss)
+    gmsDevImplementation 'com.google.android.gms:play-services-auth:20.5.0'
+    gmsDevImplementation 'com.google.android.play:core:1.10.3'
+    gmsDevImplementation 'com.google.android.play:core-ktx:1.8.1'
+    gmsDevImplementation 'com.google.api-client:google-api-client-android:1.26.0'
+    gmsDevImplementation 'com.google.apis:google-api-services-drive:v3-rev136-1.25.0'
+    gmsDevImplementation 'com.google.http-client:google-http-client-gson:1.26.0'
+
+    // google components for production package (not foss)
+    gmsProdImplementation 'com.google.android.gms:play-services-auth:20.5.0'
+    gmsProdImplementation 'com.google.android.play:core:1.10.3'
+    gmsProdImplementation 'com.google.android.play:core-ktx:1.8.1'
+    gmsProdImplementation 'com.google.api-client:google-api-client-android:1.26.0'
+    gmsProdImplementation 'com.google.apis:google-api-services-drive:v3-rev136-1.25.0'
+    gmsProdImplementation 'com.google.http-client:google-http-client-gson:1.26.0'
+
+    // google components common
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.google.android:flexbox:1.0.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.google.guava:guava:27.0.1-android'
+
+    // apache commons
+    // From version 2.7, it calls the java.nio.file API internally.
+    // NIO is available from Android 8.0 (API Level 26)
+    // Therefore, we must use version 2.6 before the minimum supported Android version becomes API Level 26 or higher.
+    implementation 'commons-io:commons-io:2.6'
+    implementation 'org.apache.commons:commons-lang3:3.7'
+    implementation 'org.apache.poi:poi:3.13'
+
+    // AAFactory
+    implementation 'io.github.aafactory:commons:1.2.0'
+//    implementation project(":aafactory-commons")
+
+    // etc.
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0-RC2'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.github.QuadFlask:colorpicker:0.0.15'
+    implementation 'com.github.amlcurran.showcaseview:library:5.4.3'
+    implementation 'com.github.zhpanvip:bannerviewpager:3.5.5'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'com.github.ksoichiro:android-observablescrollview:1.5.2'
+    implementation 'com.roomorama:caldroid:3.0.1'
+    implementation 'com.xw.repo:bubbleseekbar:3.17'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:4.0'
+    implementation 'com.simplecityapps:recyclerview-fastscroll:2.0.1'
+    implementation 'org.jasypt:jasypt:1.9.2'
+    implementation 'jp.wasabeef:glide-transformations:4.0.0'
+    implementation 'jp.co.cyberagent.android:gpuimage:2.0.3'
+    implementation 'id.zelory:compressor:2.1.0'
+    implementation 'io.noties.markwon:core:4.6.2'
+    implementation 'io.noties.markwon:syntax-highlight:4.6.2'
+    implementation 'io.noties.markwon:ext-tables:4.6.2'
+    implementation 'io.noties.markwon:image:4.6.2'
+    implementation 'io.noties.markwon:ext-strikethrough:4.6.2'
+    implementation 'io.noties:prism4j:2.0.0'
+    kapt 'io.noties:prism4j-bundler:2.0.0'
+
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.7'
+
+    // android test
+    androidTestImplementation 'androidx.test:core:1.5.0'
+    androidTestImplementation 'androidx.test:core-ktx:1.5.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.ext:junit-ktx:1.1.5'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.4.0-alpha02', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    // test
+    testImplementation 'androidx.test:core:1.5.0'
+    testImplementation 'androidx.test.ext:junit:1.1.5'
+    testImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    testImplementation 'androidx.test.espresso:espresso-intents:3.5.1'
+    testImplementation 'androidx.test.ext:truth:1.5.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.robolectric:robolectric:4.5-alpha-1'
+
+    //ssp sdp
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+}

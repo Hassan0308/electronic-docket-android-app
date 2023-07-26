@@ -1,0 +1,525 @@
+---------------------------------------------------
+
+             Easy Diary
+
+---------------------------------------------------
+
+# Changes in 1.4.300.202307110 (date: 2023.07.11)
+  * Added Dashboard Calendar Component
+
+# Changes in 1.4.299.202306100 (date: 2023.06.10)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.298.202306010 (date: 2023.06.01)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.297.202304260 (date: 2023.04.26)
+  * Improve to support markdown in widget
+
+# Changes in 1.4.295.202304180 (date: 2023.04.18)
+  * Added attached photo gallery
+
+# Changes in 1.4.294.202304080 (date: 2023.04.08)
+  * Added user manual link
+
+# Changes in 1.4.293.202303240 (date: 2023.03.24)
+  * Improved markdown mode style
+
+# Changes in 1.4.292.202303100 (date: 2023.03.10)
+  * Added support for Markdown syntax
+
+# Changes in 1.4.291.202302260 (date: 2023.02.26)
+  * Added date and time formatting settings
+
+# Changes in 1.4.289.202302031 (date: 2023.02.03)
+  * Fixed an error where diary notifications did not work in TIRAMISU (Android 13) version
+
+# Changes in 1.4.288.202302030 (date: 2023.02.03)
+  * Fixed an error where Photo Multi-Picker did not work in TIRAMISU (Android 13) version
+
+# Changes in 1.4.287.202301140 (date: 2023.01.14)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.286.202212110 (date: 2022.12.11)
+  * Fixed an error in which the timeline filter was activated abnormally
+
+# Changes in 1.4.285.202211170 (date: 2022.11.17)
+  * Changed not to check storage access permission in TIRAMISU (Android 13) version
+
+# Changes in 1.4.284.202210260 (date: 2022.10.26)
+  * Improved Dashboard UX
+
+# Changes in 1.4.280.202209160 (date: 2022.09.16)
+  * Improved Dashboard UX
+
+# Changes in 1.4.279.202208250 (date: 2022.08.25)
+  * Improved main screen and dashboard screen UX
+
+# Changes in 1.4.277.202208170 (date: 2022.08.17)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.275.202207150 (date: 2022.07.15)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.274.202206010 (date: 2022.06.01)
+  * Added the recently used symbol selection function to the symbol dialog
+
+# Changes in 1.4.273.202205070 (date: 2022.05.07)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.272.202204220 (date: 2022.04.22)
+  * Fixed abnormal termination error when exporting excel
+
+# Changes in 1.4.271.202204150 (date: 2022.04.15)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.269.202204110 (date: 2022.04.11)
+  * Change the policy so that the content is not visible in the list of recently used apps when using the lock function
+
+# Changes in 1.4.268.202204040 (date: 2022.04.04)
+  * Change the policy so that the diary list is not displayed in the widget when the lock function is used
+
+# Changes in 1.4.267.202203300 (date: 2022.03.30)
+  * Improved dashboard chart feature
+
+# Changes in 1.4.266.202203210 (date: 2022.03.21)
+  * Improved dashboard DDay setting feature
+
+# Changes in 1.4.173.4 (date: 2022.03.09)
+  * Improved dashboard DDay setting feature
+
+# Changes in 1.4.173.3 (date: 2022.03.08)
+  * Added welcome dashboard feature
+  * [BETA] Added DDay setting feature to dashboard screen
+
+# Changes in 1.4.173.2 (date: 2022.02.12)
+  * Fixed an error where the diary list could not be loaded when using widgets in Android 12 version
+
+# Changes in 1.4.173.1 (date: 2022.02.09)
+  * Fixed an error where all yearly labels in the attached photo highlights were displayed as one year
+  * Fixed an error that caused abnormal termination when using a filter on the diary post card creation screen
+
+# Changes in 1.4.173.0 (date: 2022.02.03)
+  * Added attached photo highlight function
+
+# Changes in 1.4.172.21 (date: 2022.01.22)
+  * Fixed an error that caused abnormal termination when the schedule function was set in Android 12 version
+
+# Changes in 1.4.172.20 (date: 2022.01.19)
+  * Fixed an error that caused abnormal termination in Android 7.1 or lower version when attaching a photo
+  * Fixed some errors that caused abnormal termination in Android 12 version
+
+# Changes in 1.4.172.19 (date: 2022.01.12)
+  * Diary detail screen UX improvement
+
+# Changes in 1.4.172.18 (date: 2021.12.15)
+  * Added grid setting option to main screen
+
+# Changes in 1.4.172.13 (date: 2021.11.20)
+  * Fixed an error that caused abnormal termination when entering the main screen after cleaning the memory
+
+# Changes in 1.4.172.12 (date: 2021.11.13)
+  * Improved diary list screen fast scrolling
+
+# Changes in 1.4.172.11 (date: 2021.10.27)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.172.7 (date: 2021.09.17)
+  * Change the initial font setting policy
+
+# Changes in 1.4.172.5 (date: 2021.09.04)
+  * Multilingual translation updated
+
+# Changes in 1.4.172.4 (date: 2021.08.29)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.172.3 (date: 2021.08.28)
+  * Improved custom app theme and color settings
+  * Fixed Showcase View error related to toolbar menu change
+
+# Changes in 1.4.172.2 (date: 2021.08.24)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.171.0 (date: 2021.07.21)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.170.1 (date: 2021.07.04)
+  * Added temporary save and recovery function
+  * Added the option to disable In-App Review
+
+# Changes in 1.4.169.0 (date: 2021.06.19)
+  * Spanish translation added
+
+# Changes in 1.4.168 (date: 2021.06.10)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.167 (date: 2021.05.18)
+  * Fixed a bug that abnormally terminated on some devices when rotating the device
+
+# Changes in 1.4.166 (date: 2021.05.11)
+  * Italian translation added
+  * Improved landscape screen UX
+
+# Changes in 1.4.164 (date: 2021.04.26)
+  * Fixed an issue where the date on the calendar was not visible when the card view color was black
+
+# Changes in 1.4.163 (date: 2021.03.23)
+  * Added function to save diary as HTML
+
+# Changes in 1.4.161 (date: 2021.02.12)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.159 (date: 2021.01.30)
+  * Chinese translation added
+
+# Changes in 1.4.156 (date: 2021.01.11)
+  * Add diary symbols
+  * Improved calendar screen UX
+
+# Changes in 1.4.155 (date: 2020.12.14)
+  * Add diary symbols
+  * When creating a post card, the function has been improved so that the attached photo can be cropped or a filter can be applied
+
+# Changes in 1.4.154 (date: 2020.11.28)
+  * Add diary symbols
+  * Added daily symbol usage filtering function to dashboard
+
+# Changes in 1.4.153 (date: 2020.11.10)
+  * Hindi translation added
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.152 (date: 2020.10.19)
+  * Russian translation updates
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.151 (date: 2020.10.05)
+  * Diary creation button added to the calendar screen
+
+# Changes in 1.4.150 (date: 2020.09.22)
+  * Fixed a bug where the widget was not displayed normally
+
+# Changes in 1.4.148 (date: 2020.09.15)
+  * Added task symbol sorting option
+
+# Changes in 1.4.146 (date: 2020.09.10)
+  * German translation updates
+  * Added location information display option
+
+# Changes in 1.4.145 (date: 2020.09.04)
+  * German translation updates
+
+# Changes in 1.4.143 (date: 2020.08.26)
+  * Fixed an issue where some devices were abnormally terminated in the setting screen
+
+# Changes in 1.4.141 (date: 2020.08.03)
+  * User Experience (UX) Optimization
+  * French translation updates
+
+# Changes in 1.4.140 (date: 2020.07.20)
+  * Fixed an error that the scheduler did not work in the application termination state
+
+# Changes in 1.4.139 (date: 2020.07.11)
+  * Added feature to display the information of the connected Google account
+  * Added Google Drive backup feature using scheduler
+
+# Changes in 1.4.137 (date: 2020.07.05)
+  * Applied Google Play security policy
+
+# Changes in 1.4.136 (date: 2020.06.29)
+  * Added diary list widget feature
+
+# Changes in 1.4.135 (date: 2020.06.18)
+  * Added RTL language support
+
+# Changes in 1.4.134 (date: 2020.06.14)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.133 (date: 2020.06.02)
+  * Fixed an issue where the lock screen icon was not identified when the screen background color was set to white
+
+# Changes in 1.4.132 (date: 2020.05.31)
+  * Fixed an issue where buttons included inside the card view could not be identified when the theme color and the card view background color were set to the same color
+
+# Changes in 1.4.131 (date: 2020.05.26)
+  * Fixed an error that caused abnormal termination of some screens in Android 4.4 version
+
+# Changes in 1.4.130 (date: 2020.05.20)
+  * Added diary schedule setting feature
+
+# Changes in 1.4.129 (date: 2020.04.21)
+  * Added feature to attach animated GIF files
+  * Added diary multiple copy and delete feature
+
+# Changes in 1.4.127 (date: 2020.04.12)
+  * Removed requestLegacyExternalStorage option
+  * Adding database file backup and recovery feature using SAF (Storage Access Framework)
+
+# Changes in 1.4.126 (date: 2020.04.05)
+  * Added diary encryption feature using pin number
+  * Temporarily apply the requestLegacyExternalStorage option to respond to multi-picker scoped storage issues in Android 10
+
+# Changes in 1.4.125 (date: 2020.03.23)
+  * Added cursor position setting option when entering diary edit screen
+  * Added the function to set the maximum number of lines in the content summary view option
+  * Fixed an issue where the day of the week was cut off on the calendar screen
+
+# Changes in 1.4.124 (date: 2020.03.15)
+  * Separate font-related setting option from basic setting screen
+
+# Changes in 1.4.122 (date: 2020/03/09)
+  * [BETA] Added full data recovery feature
+  * Some symbols appear unusually large in dashboard statistics
+  * Added sort option of the diary list in the calendar screen
+
+# Changes in 1.4.121 (date: 2020/03/02)
+  * Improved the speed of the calendar screen(1st improvement)
+
+# Changes in 1.4.120 (date: 2020/02/19)
+  * Added diary symbol icon
+  * Added search function using diary symbol
+
+# Changes in 1.4.119 (date: 2020/02/15)
+  * Added diary symbol icon
+
+# Changes in 1.4.118 (date: 2020/02/11)
+  * [BETA] Added full data backup feature
+
+# Changes in 1.4.116 (date: 2020/01/21)
+  * License policy changed from 「Apache License 2.0」 to 「GNU General Public License v3.0」
+
+# Changes in 1.4.114 (date: 2020/01/15)
+  * Added diary symbol icon
+  * Added French support
+
+# Changes in 1.4.113 (date: 2020/01/04)
+  * Added date movement function using date picker on calendar screen
+
+# Changes in 1.4.112 (date: 2019/12/31)
+  * Add photo attachment function through camera app integration
+  * Diary Dashboard Improvements
+
+# Changes in 1.4.110 (date: 2019/12/13)
+  * Added Diary Dashboard feature
+  * Added the ability to delete the diary backup file stored in the device
+
+# Changes in 1.4.108 (date: 2019/11/18)
+  * Fixed an error that occurred when setting the calendar font scale on a device set to French
+
+# Changes in 1.4.107 (date: 2019/10/31)
+  * User Experience (UX) Optimization
+
+# Changes in 1.4.106 (date: 2019/10/25)
+  * Fixed the error that the changed contents are not immediately visible after editing the diary
+  * Remediation for Vulnerable Libraries with known Security Issues
+
+# Changes in 1.4.105 (date: 2019/10/20)
+  * Fixed an error that occurred when using the Excel file device saving function
+  * Fixed error when deleting diary from timeline
+
+# Changes in 1.4.104 (date: 2019/10/19)
+  * Added calendar font scale setting
+  * Apply sliding page to setting screen
+
+# Changes in 1.4.103 (date: 2019/10/09)
+  * Change storage location and migrate to respond to Android 10 Scoped Storage policies
+
+# Changes in 1.4.101 (date: 2019/10/03)
+  * Respond to Android 10 storage access issues (targetSdkVersion temporary downgrade to avoid scoped storage policy)
+
+# Changes in 1.4.99 (date: 2019/09/26)
+  * Diary text counting function added
+
+# Changes in 1.4.97 (date: 2019/09/17)
+  * Improved timeline search filter
+  * Diary copy function added
+
+# Changes in 1.4.94 (date: 2019/09/03)
+  * Added calendar weekday start setting
+  * Fixed an issue that prevented the calendar from showing in tablet landscape
+
+# Changes in 1.4.93 (date: 2019/08/29)
+  * User Experience (UX) Optimization
+  * Bug fixes that crash abnormally when entering the configuration screen on older OS
+
+# Changes in 1.4.91 (date: 2019/08/12)
+  * Added backup and recovery function using device storage
+  * Fixed an issue that caused some text to be truncated on calendars on some devices
+
+# Changes in 1.4.88 (date: 2019/07/16)
+  * Migrated Android support library to AndroidX version
+  * Add diary symbol icon
+
+# Changes in 1.4.87 (date: 2019/06/20)
+  * Fixed authentication token error for users authenticated to use Google Drive in v1.4.80 earlier
+
+# Changes in 1.4.86 (date: 2019/06/19)
+  * Google Drive(REST API) Recovering photos with diary Fixing errors
+
+# Changes in 1.4.85 (date: 2019/06/18)
+  * Google Drive(REST API) user rights acquisition error correction
+  
+# Changes in 1.4.84 (date: 2019/06/15)
+  * Improved diary statistics
+
+# Changes in 1.4.83 (date: 2019/06/09)
+  * Apply Android App Bundle to reduce and optimize installation file size
+
+# Changes in 1.4.80 (date: 2019/06/07)
+  * Changed Google Drive Android API to Google Drive REST API (Google Drive Android API will be shut down on December 6, 2019)
+  
+# Changes in 1.4.78 (date: 2019/05/13)
+  * Fixed an error that ended abnormally if some function of the setting screen does not have access to device storage
+
+# Changes in 1.4.77 (date: 2019/05/11)
+  * Add diary symbols and apply categories
+
+# Changes in 1.4.76 (date: 2019/04/24)
+  * Add 50 kinds of diary symbol icons
+
+# Changes in 1.4.75 (date: 2019/03/22)
+  * Add application-specific information pages, including FAQs and privacy policies
+  * Improved pin and fingerprint unlock toggle
+  
+# Changes in 1.4.74 (date: 2019/03/06)
+  * Improved the ability to apply filters to postcard images
+  * Added ability to export diary to Excel file
+
+# Changes in 1.4.73 (date: 2019/02/11)
+  * Improved the ability to correct input digits when PIN is set and unlocked
+
+# Changes in 1.4.71 (date: 2019/01/26)
+  * Fixed an error that the application terminated abnormally when changing device fingerprint information
+
+# Changes in 1.4.70 (date: 2019/01/25)
+  * Added option to view summary of diary content
+
+# Changes in 1.4.69 (date: 2019/01/16)
+  * User Experience (UX) Optimization
+  * Fixed an error that screen transition is not normal in Android 9 Pie version
+  * Add timeline diary creation button
+
+# Changes in 1.4.68 (date: 2019/01/06)
+  * Solved security considerations for some items that are reported with low confidence in Sophos vaccine
+  * Add Postcard font size adjustment function
+
+# Changes in 1.4.67 (date: 2019/01/01)
+  * Improved the ability to view attached photos on the postcard screen
+
+# Changes in 1.4.65 (date: 2018/12/19)
+  * Added lock function using fingerprint sensor
+
+# Changes in 1.4.63 (date: 2018/11/25)
+  * Added attached photos backup and recovery function using Google Drive
+  
+# Changes in 1.4.57 (date: 2018/11/12)
+  * Added multi-picker setting function to attach multiple pictures at one time
+  
+# Changes in 1.4.55 (date: 2018/11/01)
+  * Improving the time expression of diary writing
+  * Boldface setting function added to diary title and timeline time information
+  
+# Changes in 1.4.53 (date: 2018/10/13)
+  * Added preview photo size setting function
+  * Added preview photo toggle function(fold or unfold)
+
+# Changes in 1.4.51 (date: 2018/09/29)
+  * AAF common module update
+  * Change app packaging environment to Android 9 Pie
+  
+# Changes in 1.4.47 (date: 2018/08/29)
+  * Added post card deletion function
+  
+# Changes in 1.4.42 (date: 2018/06/27)
+  * User Experience (UX) Optimization
+  
+# Changes in 1.4.41 (date: 2018/05/28)
+  * Fixed a bug that abnormally terminated in Postcard browse mode when there is no working directory
+  
+# Changes in 1.4.40 (date: 2018/05/26)
+  * Added diary postcard reading function
+  * Fixed a bug where the selected color values were initialized when rotating the screen after color selection on the diary postcard creation screen
+  
+# Changes in 1.4.37 (date: 2018/04/29)
+  * Added ability to set diary content line spacing
+  
+# Changes in 1.4.36 (date: 2018/03/31)
+  * Added diary text copy function
+
+# Changes in 1.4.35 (date: 2018/03/28)
+  * User Experience (UX) Optimization
+  
+# Changes in 1.4.26 (date: 2018/03/05)
+  * Fixed a bug that caused some device using Android 4.x to abnormally ended
+  
+# Changes in 1.4.25 (date: 2018/03/02)
+  * Change the way manage attached photos in the Diary
+  
+# Changes in 1.4.23 (date: 2018/02/27)
+  * Improved Timeline Search
+  
+# Changes in 1.4.22 (date: 2018/02/26)
+  * Fixed a bug that abnormally ended on some devices when diary browsing
+
+# Changes in 1.4.20 (date: 2018/02/23)
+  * Added timeline search function
+
+# Changes in 1.4.19 (date: 2018/02/18)
+  * User Experience (UX) Optimization
+  
+# Changes in 1.4.12 (date: 2018/02/12)
+  * Fixed bug the Fast Scroll issue in Android 4.x
+
+# Changes in 1.4.10 (date: 2018/02/11)
+  * Improved custom theme settings
+  
+# Changes in 1.4.8 (date: 2018/02/03)
+  * Add Google Play link about Easy Series Application
+  
+# Changes in 1.4.7 (date: 2018/01/09)
+  * Fixed an error when deleting the original of a linked photo from some devices.
+
+# Changes in 1.4.6 (date: 2018/01/07)
+  * Fixed main screen button touch error on some Android 6.0 devices
+  
+# Changes in 1.4.3 (date: 2018/01/03)
+  * Toolbar UI improvements
+
+# Changes in 1.4.1 (date: 2017/12/21)
+  * Added feature to change application theme
+  
+# Changes in 1.3.12 (date: 2017/12/04)
+  * Improve Google Drive sync
+  * Improve feature of diary created time include seconds
+
+# Changes in 1.3.10 (date: 2017/11/13)
+  * Added diary search case sensitive option
+
+# Changes in 1.3.7 (date: 2017/10/19)
+  * Added support for Japanese language
+
+# Changes in 1.3.6 (date: 2017/10/07)
+  * Added diary list fast scroll
+
+# Changes in 1.3.5 (date: 2017/10/02)
+  * Added TTF font loading feature
+
+# Changes in 1.3.3 (date: 2017/09/30)
+  * Adding and changing weather icons
+
+# Changes in 1.3.2 (date: 2017/08/30)
+  * Changed custom font usage policy
+
+# Changes in 1.3.1 (date: 2017/08/23)
+  * Fixed an issue terminated abnormally during showcase view initialization on some devices
+
+# Changes in 1.3.0 (date: 2017/08/19)
+  * Added showcase feature for first time users
+
+# Changes in 1.2.3 (date: 2017/07/27)
+  * Improved the ability to specify a time when creating or editing a diary
+
+# Changes in 1.2.2 (date: 2017/07/18)
+  * Fixed to update list when deleting diary items in timeline
+
+# Changes in 1.2.1 (date: 2017/07/18)
+  * Added Diary Timeline

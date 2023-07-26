@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="options_spinner_view_mode">
+        <item>Fit Center</item>
+        <item>Crop Top</item>
+        <item>Crop Center</item>
+        <item>Crop Bottom</item>
+    </string-array>
+    <string-array name="options_spinner_filter_mode">
+        <item>No Filter</item>
+        <item>Cartoon</item>
+        <item>Sepia</item>
+        <item>Contrast</item>
+        <item>Invert</item>
+        <item>Pixelation</item>
+        <item>Sketch</item>
+        <item>Swirl</item>
+        <item>Brightness</item>
+        <item>Kuwahara</item>
+        <item>Vignette</item>
+        <item>Gray Scale</item>
+    </string-array>
+    <string-array name="pref_list_fonts_title" tools:ignore="InconsistentArrays">
+        <item>Police de caractère du système</item>
+    </string-array>
+    <string-array name="pref_list_fonts_values" tools:ignore="InconsistentArrays">
+        <item>Default</item>
+    </string-array>    
+</resources>
