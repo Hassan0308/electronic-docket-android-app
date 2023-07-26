@@ -577,24 +577,25 @@ class DiaryMainActivity : ToolbarControlBaseActivity<FastScrollObservableRecycle
                     }
                     2 -> {
                         setButtonPosition(centerParams)
-                        setTarget(ViewTarget(R.id.planner, this@DiaryMainActivity))
-                        setContentTitle(getString(R.string.read_diary_showcase_title_4))
-                        setContentText(getString(R.string.read_diary_showcase_message_4))
-                    }
-                    3 -> {
-                        setButtonPosition(centerParams)
-                        setTarget(ViewTarget(R.id.timeline, this@DiaryMainActivity))
-                        setContentTitle(getString(R.string.read_diary_showcase_title_5))
-                        setContentText(getString(R.string.read_diary_showcase_message_5))
-                    }
-                    4 -> {
-                        setButtonPosition(centerParams)
-                        setTarget(ViewTarget(R.id.microphone, this@DiaryMainActivity))
+                        setShowcase(ViewTarget(mBinding.microphone), true)
                         setContentTitle(getString(R.string.read_diary_showcase_title_3))
                         setContentText(getString(R.string.read_diary_showcase_message_3))
                         setButtonText(getString(R.string.create_diary_showcase_button_2))
                     }
-                    5 -> hide()
+//                    3 -> {
+//                        setButtonPosition(centerParams)
+//                        setTarget(ViewTarget(R.id.timelinebtn, this@DiaryMainActivity))
+//                        setContentTitle(getString(R.string.read_diary_showcase_title_5))
+//                        setContentText(getString(R.string.read_diary_showcase_message_5))
+//                    }
+//                    4 -> {
+//                        setButtonPosition(centerParams)
+//                        setTarget(ViewTarget(R.id.plannerbtn, this@DiaryMainActivity))
+//                        setContentTitle(getString(R.string.read_diary_showcase_title_4))
+//                        setContentText(getString(R.string.read_diary_showcase_message_4))
+//                        setButtonText(getString(R.string.create_diary_showcase_button_2))
+//                    }
+                    3 -> hide()
                 }
             }
             mShowcaseIndex++
